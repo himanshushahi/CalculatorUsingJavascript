@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <script>
+
+        let insert = (num) => {
+            document.getElementById("input").value = document.getElementById("input").value += num;
+        }
+
+        let equal = () => {
+            document.getElementById("input").value = eval(document.getElementById("input").value)
+        }
+
+        let backspace = () => {
+            document.getElementById("input").value = document.getElementById("input").value.substring(0,input.value.length-1);
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <nav>Calculator Using Java Script</nav>
+    <div class="body">
+    <div class="containar">
+        <input type="text" class="input" id="input"><br>
+        <section class="top">
+            <input type="button" value="AC" class="equal" id="clear" onclick="input.value=' '">
+            <input type="button" value="=" class="equal" id="equal" onclick="equal()">
+            <input type="button" value="&lt~" class="equal" id="backspace" onclick="backspace()">
+        </section>
+        <section class="row">
+            <input type="button" value="9" class="butt" id="nine" onclick="insert(9)">
+            <input type="button" value="8" class="butt" id="eight" onclick="insert(8)">
+            <input type="button" value="7" class="butt" id="seven" onclick="insert(7)">
+            <input type="button" value="+" class="yellow" id="plus" onclick="insert('+')"><br>
+        </section>
+        <section class="row">
+            <input type="button" value="6" class="butt" id="six" onclick="insert(6)">
+            <input type="button" value="5" class="butt" id="five" onclick="insert(5)">
+            <input type="button" value="4" class="butt" id="four" onclick="insert(4)">
+            <input type="button" value="-" class="yellow" id="minus" onclick="insert('-')"><br>
+        </section>
+        <section class="row">
+            <input type="button" value="3" class="butt" id="three" onclick="insert(3)">
+            <input type="button" value="2" class="butt" id="two" onclick="insert(2)">
+            <input type="button" value="1" class="butt" id="one" onclick="insert(1)">
+            <input type="button" value="x" class="yellow" id="multiple" onclick="insert('*')"><br>
+        </section>
+        <section class="row">
+            <input type="button" value="0" class="zero" id="zero" onclick="insert(0)">
+            <input type="button" value="." class="zero" id="point" onclick="insert('.')">
+            <input type="button" value="/" class="yellow" id="divide" onclick="insert('/')"><br>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

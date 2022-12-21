@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color:lightblue;
+    /* height:100vh; */
+    height:92vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav{
+    background-color:cornflowerblue ;
+    /* width: 100vw; */
+    height:8vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+.containar{
+    border: 5px solid lightgray;
+    background-color:cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow:  #888888 inset;
+}
+
+.input{
+    height: 75px;
+    width: 375px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    border-bottom: 2px solid grey;
+    margin-top: 20px;
+    box-shadow: 2px grey inset;
+    font-size: 30px;
+    color:white;
+    font-weight: bolder;
+}
+
+.equal{
+    /* width: 187.5px; */
+    width: 130px;
+    height:75px;
+    border-radius:70px;
+    font-size:xx-large;
+    font-weight: bold;
+    background-color:lightslategray;
+    color:white;
+    cursor: pointer;
+}
+
+/* .top{
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+
+
+.butt{
+    width: 93.75px;
+    height:75px;
+    border-radius:70px;
+    font-size:xx-large;
+    font-weight: bold;
+    background-color: grey;
+    color:white;
+    cursor: pointer;
+}
+
+/* .row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+
+.zero{
+    width: 145px;
+    height:75px;
+    border-radius:70px;
+    font-size:xx-large;
+    font-weight: bold;
+    background-color: grey;
+    color:white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.yellow{
+    width: 93.75px;
+    height:75px;
+    border-radius:70px;
+    font-size:50px;
+    background-color:rgba(255, 200, 0, 0.726);
+    color:white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+ /* @media only screen and (max-width: 400px) {
+    .equal{
+      width: 150px;
+    }
+    .butt{
+        width:85px;
+    }
+    .zero{
+        width:125px;
+    }
+  }  */
+
+  .yellow:hover{
+    background-color: rgb(221, 221, 150);
+  }
+
+  .zero:hover{
+     background-color: rgb(186, 178, 178);
+  }
+
+  .butt:hover{
+    background-color: rgb(186, 178, 178);
+ }
+
+ .equal:hover{
+    background-color:rgb(183, 191, 198);
+ }
