@@ -111,13 +111,13 @@ nav{
 
   @media only screen and (max-width: 400px) {
     .equal{
-      width: 100px;
+      width: 120px;
     }
     .butt{
         width:85px;
     }
     .zero{
-        width:125px;
+        width:130px;
     }
       .yellow{
       width:85px;
